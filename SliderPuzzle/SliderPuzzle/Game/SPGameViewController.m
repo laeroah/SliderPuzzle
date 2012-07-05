@@ -708,7 +708,7 @@
         //based on the direction of valid movement, get the tiles in between the blank tile and the subject tile
         switch (direction) {
             case SPPuzzleTileMovingDirectionLeft:
-                for (int i=1; i<xPositionDifference; i++) {
+                for (int i=1; i<xPositionDifference; i++) { 
                     int xPosition = (int)tile.currentTilePosition.x - i;
                     int yPosition = (int)tile.currentTilePosition.y;
                     [tilesInBetween addObject:matrix[yPosition][xPosition]];
