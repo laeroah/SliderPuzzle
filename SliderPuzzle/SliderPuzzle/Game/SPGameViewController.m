@@ -21,7 +21,7 @@
 - (NSArray *)createTilesFromImage:(UIImage *)image;
 
 /**
- * use the image provided by Facebook (UIE_Slider_Puzzle--slider.jpg) to create the puzzle tiles.
+ * use the image (UIE_Slider_Puzzle--slider.jpg) to create the puzzle tiles.
  * I only implement this method so that the game can have an exact starting point described in UIE_Slider_Puzzle--slider.jpg. If it is not required to so, then it's completely unnecessary to use this method, and we can generate the tiles using UIE_Slider_Puzzle--globe.jpg.
  */
 - (NSArray *)createDefaultGameTiles;
