@@ -9,6 +9,6 @@ static char ContextPrivateKey;
     objc_setAssociatedObject(self, &ContextPrivateKey, userInfo, 3);
 }
 -(NSDictionary *)userInfo{
-    return objc_getAssociatedObject(self, &ContextPrivateKey);
+    return objc_getAssociatedObject(self, &ContextPrivateKey); 
 }
 @end
