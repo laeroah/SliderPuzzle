@@ -61,6 +61,8 @@ typedef enum {
     self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel:)] autorelease];
     
     self.puzzleNameTextField.delegate = self;
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)viewDidUnload

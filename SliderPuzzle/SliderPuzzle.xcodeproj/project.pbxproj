@@ -61,6 +61,7 @@
 		AEFF3970158B20F40096BC7B /* SPPuzzleTile.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF396F158B20F40096BC7B /* SPPuzzleTile.m */; };
 		AEFF3974158B30870096BC7B /* UIImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF3973158B30870096BC7B /* UIImageHelper.m */; };
 		AEFF3977158B46B00096BC7B /* UIViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF3976158B46B00096BC7B /* UIViewHelper.m */; };
+		AFC89D331ACD9ED6002E6285 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC89D321ACD9ED6002E6285 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,7 +135,7 @@
 		AE008AEC158C57FF008E5996 /* MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecord.m; sourceTree = "<group>"; };
 		AE008AED158C57FF008E5996 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		AE008AEE158C57FF008E5996 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
-		AE1311011597347700E08AF8 /* UIAlertViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; path = UIAlertViewHelper.h; sourceTree = "<group>"; };
+		AE1311011597347700E08AF8 /* UIAlertViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlertViewHelper.h; sourceTree = "<group>"; };
 		AE1311021597347700E08AF8 /* UIAlertViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlertViewHelper.m; sourceTree = "<group>"; };
 		AE8A576D158C79DE00DDBAEA /* SPNewPuzzleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNewPuzzleViewController.h; sourceTree = "<group>"; };
 		AE8A576E158C79DE00DDBAEA /* SPNewPuzzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNewPuzzleViewController.m; sourceTree = "<group>"; };
@@ -171,6 +172,7 @@
 		AEFF3973158B30870096BC7B /* UIImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageHelper.m; sourceTree = "<group>"; };
 		AEFF3975158B46B00096BC7B /* UIViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewHelper.h; sourceTree = "<group>"; };
 		AEFF3976158B46B00096BC7B /* UIViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewHelper.m; sourceTree = "<group>"; };
+		AFC89D321ACD9ED6002E6285 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +392,7 @@
 				AE965EB5158ADC6B00003F92 /* SPListViewController.xib */,
 				AEFF3971158B30020096BC7B /* Helpers */,
 				AE965ED7158B16C900003F92 /* Resource */,
+				AFC89D321ACD9ED6002E6285 /* Images.xcassets */,
 				AE965EA7158ADC6B00003F92 /* Supporting Files */,
 			);
 			path = SliderPuzzle;
@@ -523,7 +526,7 @@
 			name = SliderPuzzleTests;
 			productName = SliderPuzzleTests;
 			productReference = AE965EBD158ADC6B00003F92 /* SliderPuzzleTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -559,6 +562,7 @@
 			files = (
 				AE965EAB158ADC6B00003F92 /* InfoPlist.strings in Resources */,
 				AE965EB7158ADC6B00003F92 /* SPListViewController.xib in Resources */,
+				AFC89D331ACD9ED6002E6285 /* Images.xcassets in Resources */,
 				AE965EDB158B170D00003F92 /* UIE_Slider_Puzzle--globe.jpg in Resources */,
 				AE965EDC158B170D00003F92 /* UIE_Slider_Puzzle--slider.jpg in Resources */,
 				AEFF3968158B1E440096BC7B /* SPGameViewController.xib in Resources */,
@@ -732,6 +736,8 @@
 		AE965ED0158ADC6B00003F92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SliderPuzzle/SliderPuzzle-Prefix.pch";
 				INFOPLIST_FILE = "SliderPuzzle/SliderPuzzle-Info.plist";
@@ -743,6 +749,8 @@
 		AE965ED1158ADC6B00003F92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SliderPuzzle/SliderPuzzle-Prefix.pch";
 				INFOPLIST_FILE = "SliderPuzzle/SliderPuzzle-Info.plist";
